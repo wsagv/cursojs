@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 01</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background: #tomato;
+        }
+
+        h2 {
+            font: normal 22pt;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Praticando todo o conteúdo aplicado até aqui.</h2>
+
+    <script>
+        var nome = window.prompt('Por favor, digite aqui o seu nome: ')
+        document.write(`Olá, ${nome.toUpperCase()}!<br/>`)
+        window.alert(`Olá, ${nome}! Seja bem vinda a este conteúdo de prática.`)
+        var estudo = window.prompt('O que você está estudando hoje?')
+        document.write(`O conteúdo que você está estudando é: ${estudo.toUpperCase()} <br/>`)
+        window.alert('Compartilhe com a gente 3 assuntos que você mais gostou até aqui')
+        var assunto1 = window.prompt('Em 1º lugar: ')
+        var assunto2 = window.prompt('Em 2º lugar: ')
+        var assunto3 = window.prompt('E em 3º lugar: ')
+        var salario = window.prompt(`${nome.toUpperCase()}, quanto você deseja receber trabalhando com ${estudo} ?`)
+        window.alert('Agora veja o resumo de tudo que conversamos...')
+        document.write(`Os 3 assuntos que você mais gostou foram: <br/>
+        ${assunto1}, ${assunto2} e ${assunto3} <br/>
+        Continue focada em seus estudos que nós garantimos que você atingirá o seu objetivo de receber ${salario} !`)
+
+
+    </script>
+</body>
+</html>

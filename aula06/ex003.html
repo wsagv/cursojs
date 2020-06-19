@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu primeiro programa...</title>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //A característica do prompt é tratar os dados inseridos como string
+        var n2 = Number(window.prompt('Digite outro número: '))    
+        var soma = n1 + n2 // para que essa variável me retorne a soma dos valores para n1 e n2 é necessário converter
+
+        // window.alert('A soma dos valores é: ' + soma) //Concatenação
+        window.alert(`A soma dos valors ${n1} e ${n2} é ${soma}`) //templateString
+
+    </script>
+    
+</body>
+</html>

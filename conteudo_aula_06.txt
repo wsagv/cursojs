@@ -1,0 +1,53 @@
+Conteúdo aprendido na aula #06
+	
+	//A característica do prompt é tratar os dados inseridos como string
+ 	var n1 = Number(window.prompt('Digite um número: ')) *Conversão aplicada
+        var n2 = Number(window.prompt('Digite outro número: ')) *Conversão aplicada  
+
+ 	// para que essa variável me retorne a soma dos valores para n1 e n2 é necessário converter
+        var soma = n1 + n2 
+
+        // Conversão de String para Number: 
+        Number.parseInt(n) = para número inteiros 
+        Number.parseFloat(n) para número reais tipo 1,4 | 2.6
+        // Nova forma de converter: Number(n)*
+
+        // (Number + Number) para adição
+        // (String + String) para concatenação
+
+        // Caso a inteção seja forçar a inserção de números inteiros e reais, utiliza-se as formas acima
+
+        // Conversão de Number para String:
+        String(n) = exemplo: String(soma)
+        n.toString() = exemplo: soma.toString()
+
+	// Formatando Strings
+	//Concatenação
+        window.alert('A soma dos valores é: ' + soma) 
+
+	//templateString
+        window.alert(`A soma dos valors ${n1} e ${n2} é ${soma}`) 
+
+        // TemplateString = template de strings
+        CONCATENAÇÃO: 'A aluna ' + nome + ' que tem ' + idade + ' anos, tirou ' + nota 
+        TEMPLATESTRING: `A aluna ${nome} que tem ${idade} anos tirou a nota ${nota}`
+
+	// Exemplo:
+	var s = 'JavaScript'
+	podemos:
+	s.length	//quantos caracteres a string tem
+	s.toUpperCase()	//tudo para 'MAIÚSCULA'
+	s.toLowerCase()	//tudo para 'minúscula'
+	
+	CURIOSIDADE: Nome de $ = placeholder
+
+	// Formatando Number
+	var n1 = 1545.5
+	// definindo quantidade de casas decimais
+	n1.toFixed(2) = '1545.50'
+	// troca de . por ,
+	n1.toFixed(2).replace('.',',') = '1545,50'
+	// formatando para moedas de localidades
+	n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) = 'R$ 1,545.50' // real
+	n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) = 'R$ 1,545.50' // euro
+	n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) = 'R$ 1,545.50' // dolar
