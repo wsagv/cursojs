@@ -14,3 +14,10 @@ Ordem de precedência:
 2º **
 3º * / %
 4º + -
+
+Aula 07 parte 2 - Operadores
+
+  5 ==   5  - TRUE
+  5 ==  '5' - TRUE  // isso porque o javascript valida apenas o conteúdo não o tipo
+  5 === '5' - FALSE // com 3 "=" o javascript passa a validar também o tipo do conteúdo
+  5 ===  5  - TRUE  
