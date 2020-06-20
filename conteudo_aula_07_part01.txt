@@ -15,9 +15,30 @@ Ordem de precedência:
 3º * / %
 4º + -
 
-Aula 07 parte 2 - Operadores
+Aula 07 parte 2 - Operadores Relacionais Identidade
 
   5 ==   5  - TRUE
   5 ==  '5' - TRUE  // isso porque o javascript valida apenas o conteúdo não o tipo
   5 === '5' - FALSE // com 3 "=" o javascript passa a validar também o tipo do conteúdo
   5 ===  5  - TRUE  
+
+Operadores Lógicos
+
+  !  (negação)   - Não quero isso (Não)
+  && (conjunção) - Quero isso E aquilo (E)
+  || (disjunção) - Quero isso OU aquilo (OU)
+
+Exemplo:
+
+a = 5
+b = 8
+
+a > b && b % 2 == 0 
+Ordem de precedência: 1º operadores aritméticos 
+		      2º operadores relacionáis
+		      3º operadores lógicos
+
+*IMPORTANTES: Se em uma mesma função existir "!", "&&" e "||", segue a ordem:
+1º "!"
+2º "&&"
+3º "||"
