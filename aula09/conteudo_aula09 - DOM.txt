@@ -1,0 +1,15 @@
+DOM = Document Object Model (Modelos de Objetos para Documentos)
+É executado nos navegadores.
+
+Árvore DOM = Estilo uma árvore genealógica contendo pais e filhos.
+
+	// selecao por Marca = getElementByTagName() // um único elemento
+	// selecao por Marca = getElementsByTagName()[] // vários elementos elemento
+
+        var p1 = window.document.getElementsByTagName('p')[1] // selecionando o objeto
+        window.document.write('Está escrito assim: ' + p1.innerText) // mostrando na tela o objeto
+
+        // innerText = aproveita apenas o texto sem as suas propriedades
+        // innerHTML = pega todo o texto junto as suas propriedades HTML (Strong)
+
+
