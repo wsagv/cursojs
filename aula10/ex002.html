@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+        input {
+            border-radius: 3px;
+            border-color: #000;
+            width: 100px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txt1" id="txt1"> +
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="Somar" onclick="soma()">
+    <div id="res">Resultado</div>
+
+    <script>
+
+        function soma() {
+        var tn1 = window.document.getElementById('txt1')
+        var tn2 = window.document.querySelector('input#txt2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var r = n1 + n2
+        res.innerHTML = `O resultado da soma entre ${n1} e ${n2} é ${r}`
+
+        }
+
+    </script>
+    
+</body>
+</html>
