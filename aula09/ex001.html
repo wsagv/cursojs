@@ -14,14 +14,38 @@
 </head>
 <body>
     <h1>Iniciando estudos DOM</h1>
-    <p>Aqui vai o resultado</p>
+    <p>Selecionado pela Marca</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Selecionado pelo ID</div>
+    <div name="msg2">Selecionado pelo nome e informando qual o conteúdo</div>
+    <div class="msg3">Este texto deverá ser alterado</div>
 
     <script>
         // selecao por Marca = getElementByTagName()
-        var p1 = window.document.getElementsByTagName('p')[1]
-        window.document.write('Está escrito assim: ' + p1.innerText)
-    </script>
+        var p1 = window.document.getElementsByTagName('p')[1] // selecionando o objeto
+        window.document.write('Está escrito assim: ' + p1.innerText) // mostrando na tela o objeto
+        // innerText = aproveita apenas o texto sem as suas propriedades
+        // innetHTML = pega todo o texto junto as suas propriedades HTML (Strong)
+   
+        // selecao por ID = getElementById()
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green' // alterando a cor da variável d que recebeu o conteúdo da div id= "msg"
+        d.innerText = 'Selecionado pelo ID e com background e text modificado pela DOM'
+        // comando completo = window.document.getElementById('msg').innerText = "Olá"
+        
+        // selecao por nome = getElementsByName()
+        var n = window.document.getElementsByName('msg1')[0]
+        window.document.write(n.innerText)
+
+        // selecao por classe = 
+        var c = window.document.getElementsByClassName('msg3')[0]
+        c.innerText = 'Selecionado pela Classe'
+
+        // selecao pelo seletor
+        var w = window.document.querySelector('div#msg')
+        w.style.color = 'red'
+
+
+   </script>
 </body>
 </html>
