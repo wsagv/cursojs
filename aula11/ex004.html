@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <input type="text" id="pais">
+    <input type="button" value="Teste" id ="verifica" onclick="Verificar()">
+    <div id="resultado">
+            Resultado
+    </div>    
+
+    <script>
+        var res = window.document.getElementById('resultado')
+        var txtnac = window.document.getElementById('pais')
+
+        function Verificar() { 
+
+            if (txtnac == 'Brasil') {
+                res.innerText = (`O seu país de origem é ${txtnac}, portanto você é BRASILEIRO`)
+                } else {
+               console.log('estrangeiro')
+            }
+
+        }
+    </script>
+</body>
+</html>

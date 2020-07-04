@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando a velocidade</title>
+</head>
+<body>
+    <h1>Teste de Velocidade</h1>
+    <input type="number" name="vel" id="vel" placeholder="Digite sua velocidade">
+    <input type="button" value="Testar" onclick="verificar()">
+    <h2 id="result">Resultado</h2>
+</body>
+
+    <script>
+        var r = window.document.getElementById('result')
+        function verificar() {
+            var vel = window.document.getElementById('vel')
+            var velocidade = Number(vel.value)
+
+            if (velocidade > 70) {
+                r.innerText = (`Sua velocidade é de ${velocidade} Km/h e está 
+                                acima da velocidade permitida. Sua multa é de R$ 500,00 reais.`)
+                r.style.background = 'red'
+            } else {
+                r.innerText = (`Sua velocidade é de ${velocidade} Km/h e está
+                                dentro da velocidade permitida.`)
+                r.style.background = 'green'
+                    }
+        }
+    </script>
+
+</html>

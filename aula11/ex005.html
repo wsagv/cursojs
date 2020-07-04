@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+
+    <h1>Teste de Nacionalidade</h1>
+
+    <input type="text" id="pais" placeholder="Digite seu País de origem">
+    <input type="button" value="verifica" id="verificar" onclick="verificar()">
+    <div id="result">Resultado</div>
+    
+    <script>
+        var txtpais = window.document.getElementById('pais')
+        var res = window.document.getElementById('result')
+        
+
+        function verificar() {
+          
+            if (txtpais == ('Brasil')) {
+                res.innerText = (`Seu país de origem é: ${txtpais}, portanto, você é Brasileiro!`)
+            } else {
+                res.innerText = (`Seus país de origem é: ${txtpais}, portanto, você é Estrangeiro!`)
+            }
+        
+        }
+
+    </script>
+</body>
+</html>
