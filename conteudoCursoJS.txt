@@ -45,3 +45,21 @@ Ordem de precedência: 1º operadores aritméticos
 2º "&&"
 3º "||"
 
+
+Repetições | Aula 13 #parte1
+
+1 - while: Estrutura de repetição utilizando o teste lógico no início
+
+var c = 1
+while(c <= 8) {
+    console.log(`Passo ${c}`)
+    c++
+}
+
+2 - do while: Estrutura de repetição utilizando o teste lógico no final
+
+var c = 1
+do {
+    console.log(`Passo ${c}`)
+    c++
+} while (c <= 6 )

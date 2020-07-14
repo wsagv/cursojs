@@ -1,0 +1,9 @@
+/*compra de móveis*/
+
+var movel = 1
+
+while (movel <= 6 ) {
+    console.log(`Já comprei ${movel}`)
+    movel++
+}
+    return('Todos os objetivos foram atingidos')
