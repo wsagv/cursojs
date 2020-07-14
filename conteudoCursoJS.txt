@@ -63,3 +63,15 @@ do {
     console.log(`Passo ${c}`)
     c++
 } while (c <= 6 )
+
+Repetições | Aula 14 #parte2
+
+1 - for
+ex.:
+
+console.log('Vai começar...')
+for (c = 1; c <= 5; c++) {
+    console.log(c)
+}
+
+console.log('FIM!')
