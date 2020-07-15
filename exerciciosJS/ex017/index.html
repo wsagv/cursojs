@@ -10,12 +10,27 @@
 <body>
 
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>
-        <div></div>
-        <div></div>
+        <div>
+            <p>Número: 
+                <input type="number" name="numero" id="numero">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            </p>
+            <p>Operação:
+                <input type="radio" name="tabuada" id="adi" checked> + 
+                <input type="radio" name="tabuada" id="sub"> - 
+                <input type="radio" name="tabuada" id="mul"> *
+                <input type="radio" name="tabuada" id="div"> /
+            </p>
+        </div>
+        <div>
+            <select name="tabela" id="tabela" size="10">
+                <option value="">Digite um número acima</option>
+            </select>
+        </div>
     </section>
 
     <footer>
