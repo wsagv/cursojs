@@ -33,3 +33,25 @@ function tabuada() {
     }
        
 }
+
+function multiplicar() {
+    var n1 = document.getElementById('n1')
+    var n2 = document.getElementById('n2')
+    var num1 = Number(n1.value)
+    var num2 = Number(n2.value)
+    var res = document.getElementById('result')
+    var r = num1 * num2
+    res.innerHTML = `${num1} * ${num2} = ${r}` 
+
+}
+
+function dividir() {
+    var n1 = document.getElementById('n1')
+    var n2 = document.getElementById('n2')
+    var num1 = Number(n1.value)
+    var num2 = Number(n2.value)
+    var res = document.getElementById('result')
+    var r = num1 / num2
+    res.innerHTML = `${num1} / ${num2} = ${r}` 
+
+}
